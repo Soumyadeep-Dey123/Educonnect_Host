@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="logo">
+            <img src="logo-final-withoutname.png" alt="Logo">
+        </div>
+        <div class="profile-picture">
+          <i class="fas fa-sign-out-alt" style="color: beige;"logout()"></i>
+            <!-- <img id="profile-image" src="Edusphere\images\SunilLeba.jpeg" alt="profile-picture">
+            <input type="file" id="profile-image-upload" accept="image/*" onchange="updateProfilePicture()"> -->
+        </div>
+    </div>
+    <div class="tag">
+        <div class="heading">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="#">Account</a>
+        </div>
+    </div>
+    <div class="page-name">
+      <div class="head"> <h1>Account</h1></div>
+    
+    <div class="toggle-menu">
+      <div class="menu-toggle">&#9776;</div>
+      <div class="nav-links">
+      <a href="#">Profile</a>
+            <a href="#">Share</a>
+            <a href="#">Wallet</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+
+    </div>
+  </div>
+  </div>
+    <div class="container">
+ 
+    <div class="left-section" id="leftSection">
+    
+        <div class="options">
+          <ul>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Invite and Earn</a></li>
+            <li><a href="#">Wallet</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right Section -->
+<div class="right-section">
+    <div class="my-profile">
+       
+      <div class="profile-info">
+        <div class="profile-picture" id="rightProfilePicture" onclick="triggerImageUpload('profile-image-upload-right')">
+          <img src="Edusphere\images\SunilLeba.jpeg" alt="profile-picture">
+        </div>
+        <input type="file" id="profile-image-upload-right" accept="image/*" style="display: none;" onchange="updateProfilePicture('rightProfilePicture')">
+        <div class="profile-detail">
+          <p class="label">Username:</p>
+          <p class="info" id="username">YourUsername</p>
+          <span class="edit-icon" onclick="toggleEditMode('username')">✎</span>
+        </div>
+        <div class="profile-detail">
+          <p class="label">Email:</p>
+          <p class="info" id="email">user@example.com</p>
+          <span class="edit-icon" onclick="toggleEditMode('email')">✎</span>
+        </div>
+        <div class="profile-detail">
+          <p class="label">Date of Birth:</p>
+          <p class="info" id="dob">January 1, 2000</p>
+          <span class="edit-icon" onclick="toggleEditMode('dob')">✎</span>
+        </div>
+        <div class="profile-detail">
+          <p class="label">Contact:</p>
+          <p class="info" id="contact">+1234567890</p>
+          <span class="edit-icon" onclick="toggleEditMode('contact')">✎</span>
+        </div>
+      </div>
+    </div>
+  </div>
+   </div>
+   <footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+<script src="dashboard.js"></script>
+</body>
+</html>
